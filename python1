@@ -5,14 +5,19 @@ class Conta():
         self.saldo = saldo
         self.limite = limite
 
+
+    def deposita(self, valor):
+        self.saldo += valor
+        
+        
     def sacar(self, valor):
-        if (self.saldo < valor):
+        if (self.saldo < valor)
             return False
 
         else:
             self.saldo -= valor
             return True
-
+            
     def extrato(self):
         print(f"{self.titular}\no "
               f"seu saldo "
